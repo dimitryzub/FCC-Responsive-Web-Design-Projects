@@ -12,10 +12,10 @@ Everything is how would you expect - a bit (or not a bit) clunky :)
 ____________
 Info about projects:
 - There're 5 projects in total.
-- Projects are aimed to plain CSS and HTML. That's what I used in all of them. No BootStrap, TailWind CSS or something else.
-- Every project have a number of test's that I need to pass via script provided by FCC (linked via codepen.io)
+- Projects are aimed at plain CSS and HTML. That's what I used in all of them. No BootStrap, Tailwind CSS, or something else.
+- Every project have a number of test's that I need to pass via script provided by FCC (links below to codepen.io)
 - Every project was "styled" however I wanted. I'm not a designer, take this in mind.
-- In every project I tried to make a bit more challanges for myself to try thins out. Create a transition, loop animation, stuff like that to make it     "fancy" which is funny to me. 
+- In every project, I tried to make a bit more challenges for myself to try thins out. Create a transition, loop animation, stuff like that to make it "fancy" which is funny to me.
 
 Codepen projects: 
 1. Tribute page - https://codepen.io/dimitryzub/pen/LYbQdPG
