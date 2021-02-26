@@ -1,8 +1,8 @@
 # FCC-Responsive-Web-Design-Projects
 This is my completed responsive web design projects from FreeCodeCamp.
 
-A quick disclaimer. 
-I don't know how to code, I never done it, never feel I'm going to code anytime soon in my life, thought it's something similar to building a rocket and then I switch to learning it ~19 days ago (at a time I'm wrting this). GG WP. And I'm really loving it.
+A quick disclaimer.
+I don't know how to code, I have never done it, never felt I'm going to code anytime soon in my life, I thought it was something similar to building a rocket where I need to know a lot of math and then I switch to learning how to code about ~19 days ago (at a time I'm writing this). GG WP. And I'm really loving it.
 
 ___________
 Everything in this projects was done by trial and error without really knowing what is going on at core (kinda often). 
