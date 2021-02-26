@@ -1,0 +1,91 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" href="survey.form.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FCC - Survey Form, Dimitry Zub</title>
+</head>
+
+<body>
+  <h1 id="title" class="h1-text-anim">FCC: Dimitry Zub Survey Form</h1>
+  <p id="description">Let's get to know each other a bit better.</p>
+
+  <div id="mid-container">
+    
+  
+      <form id="survey-form">
+        <label id="name-label" for="name" class="label-n-e-a">Your name</label>
+
+        <input type="text" placeholder="Ender your name" name="name" id="name" required>
+
+        <label id="email-label" for="email" class="label-n-e-a">Your email</label>
+        <input type="email" placeholder="Ender your email" name="email" id="email" required>
+
+        <label id="number-label" for="email" class="label-n-e-a">Age (just in case)</label>
+        <input type="number" placeholder="Your age" name="age" min="10" max="99" id="number">
+  
+
+    <div id="survey-form">
+      <p>What's your favorite game?</p>
+      <select name="Favorite-game" id="dropdown">
+        <option value="">Choose a game</option>
+        <option value="Battlefield 3">Battlefield 3</option>
+        <option value="Minecraft">Minecraft</option>
+        <option value="Forza Horizon 4">Forza Horizon 4</option>
+        <option value="Cyberpunk 2077">Cyberpunk 2077</option>
+        <option value="Euro Truck Simulator 2">Euro Truck Simulator 2</option>
+        <option value="BeamNG.drive">BeamNG.drive</option>
+        <option value="Microsoft Flight Simulator">Microsoft Flight Simulator</option>
+      </select>
+    </div>
+
+    <div id="survey-form">
+      <p>How we met?</p>
+      <label>
+        <input name="user-recommend" value="what i'm doing here" type="radio" checked />What I'm doing here? </label>
+      <label>
+        <input name="user-recommend" value="i guess i saw you" type="radio" />Excuse me?</label>
+      <label>
+        <input name="user-recommend" value="nope" type="radio" />I saw you climbing on the tree!</label>
+    </div>
+
+    <div id="survey-form">
+      <p>What's your favorite game ganre?</p>
+      <label>
+        <input value="sandbox" type="checkbox" />Sandbox</label>
+      <label>
+        <input value="rpg" type="checkbox" />RPG</label>
+      <label>
+        <input value="rts" type="checkbox" />RTS</label>
+      <label>
+        <input value="fps" type="checkbox" />FPS</label>
+      <label>
+        <input value="moba" type="checkbox" />MOBA</label>
+      <label>
+        <input value="sim" type="checkbox" />Sim</label>
+      <label>
+        <input value="action-adventure" type="checkbox" />Action-adventure</label>
+    </div>
+
+    <div id="survey-form">
+      <p>
+        <solid>Anything you wish to write:</solid>
+      </p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Sup homie.. let's play 1vs1.." required></textarea>
+    </div>
+    <div class="survey-button">
+      <button type="submit" id="submit">
+        Submit
+      </button>
+    </div>
+    </form>
+</body>
+<footer>&copy; Created by newbie Dimitry Zub</footer>
+  </div>
+</html>
