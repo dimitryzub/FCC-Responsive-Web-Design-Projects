@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/normalize.css@8.0.1/normalize.css" rel="styleseet"> 
+    <link rel="stylesheet" href="Tech.doc.style.css">
+    <title>FCC - Technical Documentation Page, the V Programming Language, Dimitry Zub</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <header style="text-align: center; padding-top: 3%;">Vlang</header>
+    <ul>
+       <li id="li-nav"> <a href="#building_maintainable_programs" class="nav-link">Building maintainable programs</a>
+    </li>
+       <li id="li-nav"> <a href="#safety" class="nav-link">Safety</a>
+    </li>
+       <li id="li-nav"> <a href="#performance" class="nav-link">Performance</a>
+    </li>
+       <li id="li-nav"> <a href="#fast_compilation" class="nav-link">Fast compilation</a>
+    </li>
+       <li id="li-nav"> <a href="#innovative_memory_management" class="nav-link">Innovative memory management</a>
+    </li>
+       <li id="li-nav"> <a href="#small_and_easy_to_build_compiler" class="nav-link">Small and easy to build compiler</a>
+    </li>
+       <li id="li-nav"> <a href="#c_translation_(wip)" class="nav-link">C translation (wip)</a>
+    </li>
+       <li id="li-nav"> <a href="#hot_code_reloading" class="nav-link">Hot code reloading</a>
+    </li>
+       <li id="li-nav"> <a href="#powerful_graphics_libraries" class="nav-link">Powerful graphics libraries</a>
+    </li>
+       <li id="li-nav"> <a href="#native_cross_platform_gui_library" class="nav-link">Native cross platform GUI library</a>
+    </li>
+       <li id="li-nav"> <a href="#easy_cross_compilation" class="nav-link">Easy cross compilation</a>
+    </li>
+       <li id="li-nav"> <a href="#painless_deployments" class="nav-link">Painless deployments</a>
+    </li>
+       <li id="li-nav"> <a href="#run_everywhere" class="nav-link">Run everywhere</a>
+    </li>
+       <li id="li-nav"> <a href="#repl" class="nav-link">REPL</a>
+    </li>
+       <li id="li-nav"> <a href="#v_script" class="nav-link">V script</a>
+    </li>
+       <li id="li-nav"> <a href="#code_formatting_with_vfmt_for_consistent_style" class="nav-link">Code formatting with VFMT for consistent style</a>
+    </li>
+       <li id="li-nav"> <a href="#a_built-in_code_profiler" class="nav-link">A built-in code profiler</a>
+    </li>
+       <li id="li-nav"> <a href="#javaScript_and_wasm_backends" class="nav-link">JavaScript and WASM backends</a>
+    </li>
+       <li id="li-nav"> <a href="#automatic_documentation" class="nav-link">Automatic documentation</a>
+    </li>
+       <li id="li-nav"> <a href="#built-in_testing_framework" class="nav-link">Built-in testing framework</a>
+    </li>
+       <li id="li-nav"> <a href="#friendly_error_messages" class="nav-link">Friendly error messages</a>
+    </li>
+       <li id="li-nav"> <a href="#reference" class="nav-link">Reference</a>
+    </li>
+    </ul>
+    </nav>
+    
+    <main id="main-doc">
+           <section  class="main-section" id="building_maintainable_programs">
+               <header>Building maintainable programs</header>
+               <p>You can learn the entire language by going tdrough the<a href="https://gitdub.com/vlang/v/blob/master/doc/docs.md" target="_blank" rel="noopener noreferrer">documentation</a> in an hour, and in most cases tdere's only one way to do sometding.<br>
+                tdis results in simple, readable, and maintainable code.<br>
+                Despite being simple, V gives a lot of power to the developer and can be used in pretty much every field, <br>
+                including systems programming, webdev, gamedev, GUI, mobile (wip), science, embedded, tooling, etc.<br>
+                V is very similar to Go. If you know Go, you already know ≈80% of V. tdings V improves on Go: <a href="https://vlang.io/compare#go" target="_blank" rel="noopener noreferrer">vlang.io/compare#go</a>.</p>
+           </section>
+           <section class="main-section" id="safety">
+               <header>Safety</header>
+               <ul id="ul-main">
+                <li>No null</li>
+                <li>No global variables</li>
+                <li>No undefined values</li>
+                <li>No undefined behavior</li>
+                <li>No variable shadowing</li>
+                <li>Bounds checking</li>
+                <li>Immutable variables by default</li>
+                <li>Pure functions by default</li>
+                <li>Immutable structs by default</li>
+                <li>Option/Result and mandatory error checks</li>
+                <li>Sum types</li>
+                <li>Generics</li>
+            </ul>
+           </section>
+           <section  class="main-section" id="performance">
+               <header>Performance</header>
+               <ul id="ul-main">
+                   <li>As fast as C (V's main backend compiles to human readable C)</li>
+                   <li>C interop witdout any costs</li>
+                   <li>Minimal amount of allocations</li>
+                   <li>Built-in serialization witdout runtime reflection</li>
+                   <li>Compiles to native binaries witdout any dependencies: a simple web server is only 65 KB</li>
+               </ul>
+           </section>
+           <section  class="main-section" id="fast_compilation">
+               <header>Fast compilation</header>
+               <p>V compiles ≈110k (Clang backend) and ≈1 million (x64 and tcc backends) lines of code per second per CPU core.
+                (Intel i5-7500, SM0256L SSD, no optimization)<br>
+                V is written in V and compiles itself in under a second.</p>
+           </section>
+           <section class="main-section"  id="innovative_memory_management">
+               <header>Innovative memory management</header>  
+               <p>V avoids doing unnecessary allocations in thefirst place by using value types, string buffers, promoting a simple abstraction-free code style.<br>
+                Most objects (~90-100%) are freed by V's autofree engine: thecompiler inserts necessary free calls automatically during compilation. <br><br>
+                Remaining small percentage of objects is freed via reference counting.<br>
+                the developer doesn't need to change anytding in tdeir code. "It just works", like in Pytdon, Go, or Java, except tdere's no heavy GC tracing everytding or expensive RC for each object.<br>
+                <br>
+                For developers willing to have more low level control, autofree can be disabled witd -noautofree.<br>
+                Note: right now autofree is hidden behind the-autofree flag. It will be enabled by default in V 0.3.<br>
+                <br>
+                V's compile-time memory management demo. All objects are freed during compilation. Running theVed editor on an 8 MB file witd 0 leaks:<br>
+            <p align="center" style="padding: 5px;">
+               <iframe 
+                widtd="500" 
+                height="500" 
+                src="https://www.youtube.com/embed/gmB8ea8uLsM" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            </p>
+                </p>
+           </section>
+           <section  class="main-section" id="small_and_easy_to_build_compiler">
+            <header>Small and easy to build compiler</header>
+            <p>V can be bootstrapped in under a second by compiling its code translated to C witd a simple:</p>
+            <code>cc v.c</code>
+            <p>No libraries or dependencies needed.<br> 
+                For comparison, space and time required to build each compiler:</p>
+            <table>
+                <tr>
+                  <th>Package</th>
+                  <th>Space</th> 
+                  <th>Build Time</th>
+                </tr>
+                <tr>
+                  <td>Go</td>
+                  <td>525 MB</td>
+                  <td>1m 33s</td>
+                </tr>
+                <tr>
+                  <td>Rust</td>
+                  <td>30 GB</td>
+                  <td>45m</td>
+                </tr>
+                <tr>
+                  <td>GCC</td>
+                  <td>8 GB</td>
+                  <td>50m</td>
+                </tr>
+                <tr>
+                  <td>Clang</td>
+                  <td>90 GB</td>
+                  <td>60m</td>
+                </tr>
+                <tr>
+                  <td>Swift</td>
+                  <td>70 GB </td>
+                  <td>90m</td>
+                </tr>
+                <tr>
+                  <td>V</td>
+                  <td>< 2 MB</td>
+                  <td>< 1s</td>
+                </tr>
+              </table>
+              <p>Building V in 0.4 seconds and then using the resulting binary to build itself again:</p><br>
+              <p align="center" style="padding: 5px;">
+               <iframe 
+               src="https://vlang.io/img/buildv.mp4"
+               frameborder="0" 
+               height="705"></iframe></p>   
+        </section>
+           <section class="main-section" id="c_translation_(wip)">
+            <header>C translation (wip)</header>
+            <p>V can translate your entire C project (wip) and offer you the safety, simplicity, and 10-25x compilation speed-up.</p>
+            <pre><code>std::vector s;
+s.push_back("V is ");
+s.push_back("awesome");
+std::cout << s.size();</code></pre>
+             
+             
+            <pre><code>mut s := []
+s << 'V is '
+s << 'awesome'
+println(s.len)</code></pre> 
+            <p>A blog post about translating DOOM will be published.<br>
+                C++ to V translation is at an early stage.</p>
+                <p>Translating DOOM from C to V and building it in 0.7 seconds:</p><br>
+                <img src="https://vlang.io/img/doom.png" alt="doom">
+                <p>You can follow the progress and read translated code here: 
+                   <a 
+                   style="text-decoration: underline;" 
+                  href="https://github.com/vlang/doom" 
+                  target="_blank" 
+                  rel="noopener noreferrer">github.com/vlang/doom</a></p>
+        </section>
+           <section  class="main-section" id="hot_code_reloading">
+            <header>Hot code reloading</header>
+            <p>Get your changes instantly without recompiling.<br>
+            Since you also don't have to get to the state you are working on after every compilation, this can save a lot of precious minutes of your development time.
+            <br>
+            <br>  
+            <a style="text-decoration: underline;" 
+            href="https://github.com/vlang/v/tree/master/examples/hot_reload" 
+            target="_blank" 
+            rel="noopener noreferrer">github.com/.../examples/hot_reload</a></p>
+            <p align="center" style="padding: 5px;">
+               <iframe 
+               src="https://vlang.io/img/hot.mp4" 
+               frameborder="0"
+               width="100"
+               height="320">
+               </iframe>
+            </p>
+        </section>
+           <section  class="main-section" id="powerful_graphics_libraries">
+            <header>Powerful graphics libraries</header>
+            <p>Cross-platform drawing library built on top of GDI+/Cocoa Drawing, and <br>
+                 an OpenGL based graphics library for more complex 2D/3D applications, that will <br>
+                  also have the following features:</p>
+            <ul id="ul-main">
+                <li>Loading complex 3D objects with textures</li>
+                <li>Camera (moving, looking around)</li>
+                <li>Skeletal animation</li>
+            </ul>
+            <p>DirectX, Vulkan, and Metal support is planned.<br>
+                A simple example of the graphics library in action is 
+                <a 
+                style="text-decoration: underline;"  
+                href="https://github.com/vlang/v/tree/master/examples/tetris" 
+                target="_blank" 
+                rel="noopener noreferrer">tetris.v</a>.</p>
+                <img 
+                src="https://vlang.io/img/gg.png" 
+                alt="wireframe_example">
+        </section>
+           <section  class="main-section" id="native_cross_platform_gui_library">
+            <header>Native cross platform GUI library</header>
+            <p>Build native apps with native controls. You no longer need to embed a browser to develop cross-platform apps quickly.<br>
+                V has a ui module that uses native GUI toolkits: WinAPI/GDI+ on Windows, Cocoa on macOS. On Linux custom drawing is used.
+            <br>
+            <br>
+            Coming soon:</p>
+            <ul id="ul-main">
+                <li>a Delphi-like visual editor for building native GUI apps</li>
+                <li>iOS/Android support with native controls</li>
+                <li>a declarative API similar to SwiftUI and React Native</li>
+            </ul>
+            <p> <a style="text-decoration: underline;" 
+                   href="https://github.com/vlang/ui" 
+                   target="_blank" 
+                   rel="noopener noreferrer">github.com/vlang/ui</a></p>
+
+            <p>Volt, a 300 KB Slack client built with V and V ui:</p><br>
+            <img src="https://volt-app.com/img/screen3.png" alt="Slack client built with V">
+        </section>
+           <section class="main-section" id="easy_cross_compilation">
+            <header>Easy cross compilation</header>
+            <p>To cross compile your software simply run v -os windows. or v -os linux. No extra steps required, even for GUI and graphical apps!<br>
+                (Compiling macOS software only works on macOS for now.)</p>
+                <p>Building V for Windows using V for macOS, and then testing resulting v.exe on a Windows VM:</p><br>
+                <p align="center" style="padding: 5px;">
+                  <iframe src="https://vlang.io/img/vwin.mp4" 
+                  frameborder="0" 
+                  height="452">
+                  </iframe>
+               </p>
+        </section>
+           <section class="main-section" id="painless_deployments">
+            <header>Painless deployments</header>
+            <p>To build your project, no matter how big, all you need to do is run</p>
+            <code>v .</code>
+            <br>
+                <p>No build environments, makefiles, headers, virtual environments, etc.<br>
+                    You get a single statically linked binary that is guaranteed to work on all operating systems (provided you cross compile) without any dependencies.<br>
+                    Installing new libraries via vpm, a centralized package manager written in V, is as simple as</p>
+                    <code>v install ui</code>
+                    <br>
+                    <br>
+        </section>
+           <section class="main-section" id="run_everywhere">
+            <header>Run everywhere</header>
+            <p>V can emit (human readable) C, so you get the great platform support and optimization of GCC and Clang. (Use v -prod . to make optimized builds.)<br>
+                Emitting C will always be an option, even after direct machine code generation matures.<br>
+                V can call C code, and calling V code is possible in any language that has C interop.</p>
+        </section>
+           <section class="main-section" id="repl">
+            <header>REPL</header> 
+            <pre><code>v
+>>> import net.http
+>>> data := http.get('https://vlang.io/utc_now')?
+>>> data.text
+1565977541</code></pre>
+        </section>
+           <section class="main-section" id="v_script" >
+            <header>V Script</header>
+            <pre><code>for file in ls('build/') {
+rm(file)
+}
+mv('v.exe', 'build/')
+v run deploy.vsh</code></pre>
+            <p> 
+               <a 
+               style="text-decoration: underline;" 
+               href="https://vlang.io/docs#bash" 
+               arget="_blank" 
+               rel="noopener noreferrer">Read more about V script</a></p>
+        </section>
+           <section  class="main-section" id="code_formatting_with_vfmt_for_consistent_style">
+            <header>Code formatting with VFMT for consistent style</header>
+            <p>No more arguments about coding styles. There's one official coding style enforced by the vfmt formatter.<br>
+                All V code bases are guaranteed to use the same style, making it easier to read and change code written by other developers.</p>
+            <code>v fmt -w hello.v</code>
+            <br>
+            <br>
+        </section>
+           <section  class="main-section" id="a_built-in_code_profiler">
+            <header>A built-in code profiler</header>
+            <p>Build and run your program with</p>
+            <code>v -profile profile.txt x.v && ./x</code><br>
+            <p>and you'll get a detailed list for all function calls: number of calls, average time per call, total time per call.</p>
+        </section>
+           <section class="main-section" id="javaScript_and_wasm_backends" >
+            <header>JavaScript and WASM backends</header>
+            <p>V programs can be translated to JavaScript:</p>
+            <code>v -o hello.js hello.v</code><br>
+            <p>They can also be compiled to WASM (for now with Emscripten). V compiler compiled to WASM and running V programs by translating them to JavaScript:<br>
+                <br>
+               <a 
+               style="text-decoration: underline;" 
+               href="https://v-wasm.now.sh/" 
+               target="_blank" 
+               rel="noopener noreferrer">v-wasm.now.sh</a><br>
+                <br>
+                A game written using V's graphical backend and compiled to WASM: 
+                <br>
+                <br>
+               <a 
+               style="text-decoration: underline;" 
+               href="https://v2048.vercel.app/" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               v2048</a> 
+               
+            </p>
+        </section>
+           <section  class="main-section" id="automatic_documentation">
+            <header>Automatic documentation</header>
+            <p>Use vdoc to get instant documentation generated directly from the module's source code. No need to keep and update separate documentation.</p>
+            <code>v doc os</code>
+            <br>
+            <br>
+        </section>
+           <section  class="main-section" id="built-in_testing_framework">
+            <header>Built-in testing framework</header>
+            <p>Writing tests is very easy: just start your test function with:</p>
+            <pre><code>test_ 
+fn get_string() string { return 'hello' } 
+fn test_get_string() {
+assert get_string() == 'hello' 
+}</code></pre>
+            </section>
+            <section class="main-section" id="friendly_error_messages">
+            <header>Friendly error messages</header>
+            <p>Helpful error messages make learning the language and fixing errors simpler:</p>
+            <pre><code>user.v:8:14: error: `update_user` parameter `user` is mutable,
+you need to provide `mut`: `update_user(mut user)`
+7 |     mut user := User{}
+8 |     update_user(user)
+|                 ~~~~ 
+9 | }</code><pre>
+        </section>
+        <section class="main-section" id="reference">
+         <header>Reference</header>
+         <p>All the documentation in this page is taken from <a style="text-decoration: underline;" href="https://vlang.io/" target="_blank" rel="noopener noreferrer">Vlang.io</a></p>
+     </section>
+        <footer>&copy; 2021, Created by newbie Dimitry Zub </footer>
+</main>
+</body>
+</html>
