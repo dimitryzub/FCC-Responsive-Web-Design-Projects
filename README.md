@@ -17,3 +17,12 @@ Info about projects:
 - Every project was "styled" however I wanted. I'm not a designer, take this in mind.
 - In every project I tried to make a bit more challanges for myself to try thins out. Create a transition, loop animation, stuff like that to make it     "fancy" which is funny to me. 
 
+Codepen projects: 
+1. Tribute page - https://codepen.io/dimitryzub/pen/LYbQdPG
+2. Survey form - https://codepen.io/dimitryzub/pen/wvorqmq
+3. Product landing page - https://codepen.io/dimitryzub/pen/yLVzomG
+4. Technical documentation - https://codepen.io/dimitryzub/details/oNYpNYG 
+It's really interesting, because I wrote directly to	Alexander Medvednikov via Discord with words "oh hey there! I wrote a fan documentation about you language. Just so you know." And he replied to me with kind words. Thanks to my brother Ilya Zub :)
+Have no idea what I was trying to say wtih this. Interesting experience.
+5. Personal portfolio - https://codepen.io/dimitryzub/pen/eYBVegO
+
