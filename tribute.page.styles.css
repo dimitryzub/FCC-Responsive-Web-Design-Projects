@@ -1,0 +1,89 @@
+body {
+    background: white;
+    font-family: Ubuntu, monospace;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  #main {
+    margin: 2%;
+    padding: 15px;
+    border-radius: 15px;
+    background: #dbdbdb;
+  }
+  
+  @media (max-width: 460px) {
+    #main {
+      margin: 0;
+    } 
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-weight:normal;
+  }
+  
+  p {
+    font-size: 10px;
+    margin: auto;
+  }
+  
+  a {
+    color: #477ca7;
+  }
+  
+  #img-div {
+    display: block;
+    background: white;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    width: 50%;
+    padding: 20px;
+    display: block;
+    border-radius: 40px;
+    margin: 0 auto;
+  }
+  
+  #img-caption {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  ui {
+    line-height: 2;
+    resize: none;
+    max-width: 550px;
+    text-align: justify;
+    position: relative;
+    left: 43%;
+    }
+    /* Can't figure it out how to properly align and lock text so I come up to something like this. I know there's a better way but don't figure it out yet. */
+  
+  blockquote {
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    padding: 20px;
+    opacity: 80%;
+  }
+  
+  #tribute-link-padding {
+    padding: 10px;
+    opacity: 80%;
+  }
+  
+  footer {
+    color: #6196ff;
+    padding-bottom: 35px;
+    opacity: 40%;
+  }
+  
