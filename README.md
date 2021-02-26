@@ -17,7 +17,7 @@ Info about projects:
 - Every project was "styled" however I wanted. I'm not a designer, take this in mind.
 - In every project, I tried to make a bit more challenges for myself to try thins out. Create a transition, loop animation, stuff like that to make it "fancy" which is funny to me.
 
-Codepen projects: 
+Codepen projects (you can run the script to see if it's passing all user stories): 
 1. Tribute page - https://codepen.io/dimitryzub/pen/LYbQdPG
 2. Survey form - https://codepen.io/dimitryzub/pen/wvorqmq
 3. Product landing page - https://codepen.io/dimitryzub/pen/yLVzomG
