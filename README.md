@@ -33,3 +33,5 @@ Deployed 5 projects to Vercel:
 3. Product landing page - https://product-landing-page-six.vercel.app
 4. Technical documentation - https://technical-documentation-mu.vercel.app
 5. Personal portfolio - https://portfolio-webpage-mocha.vercel.app
+
+(it's much faster to see them via links above rather than going through the "environments" tab (there's is a bit messy, tried to understand how things work)
