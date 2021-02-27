@@ -2,16 +2,19 @@
 This is my completed responsive web design projects from FreeCodeCamp.
 
 A quick disclaimer.
-I don't know how to code, I have never done it, never felt I'm going to code anytime soon in my life, I thought it was something similar to building a rocket where I need to know a lot of math and then I switch to learning how to code about ~19 days ago (at a time I'm writing this). GG WP. And I'm really loving it.
+I don't know how to code, I have never done it, never felt I'm going to code anytime soon in my life, I thought it was something similar to building a rocket where I need to know a lot of math and then I switch to learning how to code about ~19 days ago (at a time I'm writing this). 
+
+GG WP. 
+I'm really loving it.
 
 ___________
-Everything in this projects was done by trial and error without really knowing what is going on at core (kinda often). 
+Everything in this projects was done by trial and error without really knowing what is going on at core. 
 This will be learned step-by-step from now on. Just so I understand what is actually happening under the hood to give a better picture.
 Everything is how would you expect - a bit (or not a bit) clunky :)
 
 ____________
 Info about projects:
-- There're 5 projects in total.
+- There're 5 projects in total from Responsive web design block.
 - Projects are aimed at plain CSS and HTML. That's what I used in all of them. No BootStrap, Tailwind CSS, or something else.
 - Every project have a number of test's that I need to pass via script provided by FCC (links below to codepen.io)
 - Every project was "styled" however I wanted. I'm not a designer, take this in mind.
