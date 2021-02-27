@@ -4,6 +4,7 @@ body {
     padding: 0;
     color: black;
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 #main-doc {
