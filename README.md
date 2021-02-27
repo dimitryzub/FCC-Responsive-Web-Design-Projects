@@ -26,3 +26,10 @@ It's really interesting, because I wrote directly to	Alexander Medvednikov via D
 Have no idea what I was trying to say wtih this. Interesting experience.
 5. Personal portfolio - https://codepen.io/dimitryzub/pen/eYBVegO
 
+______
+Deployed 5 projects to Vercel:
+1. Tribute page - https://tribute-page-flame.vercel.app
+2. Survey form - https://survey-form-theta.vercel.app (on vercel, top text elements looks correct in comparison to codepen. Currently I don't understand this behavior.)
+3. Product landing page - https://product-landing-page-six.vercel.app
+4. Technical documentation - https://technical-documentation-mu.vercel.app
+5. Personal portfolio - https://portfolio-webpage-mocha.vercel.app
