@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
 * {
     margin: 0;
@@ -89,7 +86,6 @@ h3 {
 h4 {
     font-size: 3rem;
 }
-/* Middle Arrow */
 .arrow {
     border: solid #7e7e7e;
     border-width: 0 4px 4px 0;
