@@ -2,13 +2,12 @@
 
 html,
 body {
-  background: #deffc8; /*fallback for older browsers */
+  background: #deffc8;
   background-image: linear-gradient(to right top, #94ff34, #b4fa1e, #d0f503, #e9ef00, #ffe900);
   height: 100%;
   width: 100%;
   margin: 0;
 }
-
 header {
   width: 99%;
   height: 100px;
@@ -20,7 +19,6 @@ header {
   align-content: center;
   margin: 10px;
 }
-
 #header-left {
   width: 25%;
   height: 50%;
@@ -29,7 +27,6 @@ header {
   align-items: flex-start;
   align-content: flex-start;
 }
-
 #header-img {
   width: 100%;
   height: 90%;
@@ -38,7 +35,6 @@ header {
   animation-duration: 5s;
   animation-timing-function: ease;
 }
-
 #nav-bar {
   background: linear-gradient(0deg, rgba(46,46,46,1) 0%, rgba(66,66,66,1) 100%);
   border-radius: 10px;
@@ -57,11 +53,9 @@ header {
   animation-timing-function: ease;
   font-family: "Roboto", sans-serif;
 }
-
 .nav-link {
   font-weight: 600;
 }
-
 h2 {
   background: -webkit-linear-gradient(
     20deg,
@@ -76,14 +70,12 @@ h2 {
   font-size: 2vw;
   font-family: "Roboto", sans-serif;
 }
-
 h3 {
   color: white;
   text-align: center;
   font-size: 1vw;
   font-family: "Roboto", sans-serif;
 }
-
 ul {
   list-style: none;
   list-style-type: circle;
@@ -93,12 +85,10 @@ ul {
   font-size: 0.5vw;
   font-family: "Roboto", sans-serif;
 }
-
 a {
   text-decoration: none;
   color: white;
 }
-
 #mid-container {
   width: 93%;
   height: 500px;
@@ -111,7 +101,6 @@ a {
   align-items: center;
   align-content: center;
 }
-
 #mid-cont-left {
   height: 93%;
   width: 65%;
@@ -122,9 +111,7 @@ a {
   align-items: center;
   align-content: center;
 }
-
 #pricing {
-  
   width: 98%;
   height: 75%;
   position: relative;
@@ -134,7 +121,6 @@ a {
   align-items: center;
   align-content: center;
 }
-
 #mid-cont-left-bottom {
   background: linear-gradient(0deg, rgba(46,46,46,1) 0%, rgba(66,66,66,1) 100%);
   border-radius: 25px;
@@ -150,7 +136,6 @@ a {
   animation-duration: 2s;
   animation-timing-function: ease;
 }
-
 #mid-cont-left-bottom-1 {
   width: 97%;
   height: 40%;
@@ -160,21 +145,17 @@ a {
   align-items: center;
   align-content: center;
 }
-
 #h3-mid-cont-left-bottom {
   color: white;
   margin-top: 1.5%;
 }
-
 #email {
   width: 45%;
 }
-
 #submit {
   background-color: #fee960;
   border-radius: 5px;
 }
-
 #mid-cont-left-top-1 {
   background-color: #2e2e2e;
   width: 30%;
@@ -194,7 +175,6 @@ a {
   animation-duration: 1s;
   animation-timing-function: ease;
 }
-
 #mid-cont-left-top-2 {
   background-color: #2e2e2e;
   width: 30%;
@@ -214,7 +194,6 @@ a {
   animation-duration: 1.2s;
   animation-timing-function: ease;
 }
-
 #mid-cont-left-top-3 {
   background-color: #2e2e2e;
   width: 30%;
@@ -234,44 +213,37 @@ a {
   animation-duration: 1.3s;
   animation-timing-function: ease;
 }
-
 #mid-top-left-top-in-1 {
   width: 20%;
   height: 20%;
   margin-top: 2%;
 }
-
 #mid-top-left-top-in-2 {
   width: 20%;
   height: 20%;
   margin-top: 2%;
 }
-
 #mid-top-left-top-in-3 {
   width: 20%;
   height: 20%;
   margin-top: 2%;
 }
-
 /* All small package images */
 #mid-top-left-img-1 {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
 #mid-top-left-img-2 {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
 #mid-top-left-img-3 {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
 /* Container for text */
 #mid-top-left-text-1 {
   width: 90%;
@@ -281,7 +253,6 @@ a {
   align-items: center;
   align-content: center;
 }
-
 #mid-top-left-text-2 {
   width: 90%;
   height: 75%;
@@ -290,7 +261,6 @@ a {
   align-items: center;
   align-content: center;
 }
-
 #mid-top-left-text-3 {
   width: 90%;
   height: 75%;
@@ -299,15 +269,12 @@ a {
   align-items: center;
   align-content: center;
 }
-
 .left-text-button {
   border-radius: 55px;
 }
-
 .button {
   color: orange;
 }
-
 #showcase {
   height: 100%;
   width: 33%;
@@ -317,13 +284,11 @@ a {
   animation-duration: 2s;
   animation-timing-function: ease;
 }
-
 #video {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
 footer {
   height: 30px;
   position: fixed;
@@ -332,7 +297,6 @@ footer {
   text-align: center;
   opacity: 70%;
 }
-
 @keyframes subscription {
   0% {
     top: -200%;
@@ -341,7 +305,6 @@ footer {
     top: 0%;
   }
 }
-
 @keyframes email {
   0% {
     position: relative;
@@ -352,7 +315,6 @@ footer {
     top: 0%;
   }
 }
-
 @keyframes video {
   0% {
     position: relative;
@@ -363,7 +325,6 @@ footer {
     left: 0%;
   }
 }
-
 @keyframes nav-bar {
   0% {
     position: relative;
@@ -374,7 +335,6 @@ footer {
     left: 0%;
   }
 }
-
 @keyframes header-img {
   0% {
     opacity: 0%;
@@ -383,8 +343,7 @@ footer {
     opacity: 100%;
   }
 }
-
-/*Need a much more practice with media queries. Currently doing everything blindly. Will be making individual practices solely to understand their work. */
+/* Need a much more practice with media queries. Currently doing everything blindly. */
 @media screen and (max-width: 600px) {
   #nav-bar {
     float: none;
